@@ -12,7 +12,12 @@ export type CubeProps = {
 };
 
 const defaultDimensions = { width: 1, height: 1, depth: 1 };
-const defaultMaterial = new Three.MeshBasicMaterial({ color: 0x00ff00 });
+const defaultMaterial = new Three.MeshStandardMaterial({
+  color: 0xddeeff,
+  roughness: 0.8,
+  metalness: 0.5,
+  bumpScale: 0.0005,
+});
 
 export function createCube(props?: Partial<CubeProps>): Three.Mesh {
   const dimensions = {
