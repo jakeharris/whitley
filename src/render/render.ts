@@ -24,6 +24,7 @@ export function createThreeRenderTools(): ThreeRenderTools {
 
   const renderer = new Three.WebGLRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.shadowMapEnabled = true;
 
   return { scene, camera, renderer };
 }
