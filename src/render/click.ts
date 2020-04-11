@@ -17,10 +17,10 @@ export function configureClicks(tools: ThreeRenderTools) {
 
     const intersections = raycaster.intersectObjects(litlyBoard.children);
     if (intersections.length > 0) {
-      for (const intersection of intersections) {
-        // @todo: make this show a glow over the LED
-        // intersection.object.visible = !intersection.object.visible;
-      }
+      // for (const intersection of intersections) {
+      // @todo: make this show a glow over the LED
+      // intersection.object.visible = !intersection.object.visible;
+      // }
     }
   }
 
