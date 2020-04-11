@@ -13,6 +13,8 @@ export interface ThreeRenderTools {
 
 export function createThreeRenderTools(): ThreeRenderTools {
   const scene = new Three.Scene();
+  scene.background = new Three.Color(0xdeeeff);
+
   // @todo: parameterize
   const camera = new Three.PerspectiveCamera(
     75,
